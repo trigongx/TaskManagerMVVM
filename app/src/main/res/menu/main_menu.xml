@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/show_done_task"
+        android:id="@+id/show_done_task"/>
+
+    <item android:title="@string/show_not_done_task"
+        android:id="@+id/show_not_done_task"/>
+
+    <item android:title="@string/show_all_task"
+        android:id="@+id/show_all_task"/>
+
+</menu>

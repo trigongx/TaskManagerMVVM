@@ -1,20 +1,10 @@
 package com.example.taskmanagermvvm
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import com.example.taskmanagermvvm.core.base.BaseActivity
 import com.example.taskmanagermvvm.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding:ActivityMainBinding
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        initUI()
-    }
-
-    private fun initUI() {
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-    }
+class MainActivity : BaseActivity<ActivityMainBinding, ActivityViewModel>() {
+    override val viewModel: ActivityViewModel
+        get() = TODO()
+    override fun inflateViewBinding(): ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
 }
